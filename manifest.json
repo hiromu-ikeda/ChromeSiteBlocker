@@ -1,0 +1,12 @@
+{
+    "name": "siteBlocker",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "This extension can block site.",
+    "content_scripts": [
+        {
+            "matches": [ "https://www.youtube.com/*" ],
+            "js": [ "stopYouTube.js" ]
+        }
+    ]
+}
